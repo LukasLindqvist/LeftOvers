@@ -16,7 +16,9 @@ function CheckOut() {
   return (
     <div className='container'>
       <div className='returnArrow'>
-        <img src={returnArrow} alt='arrow'></img>
+        <Link to='/shop'>
+          <img src={returnArrow} alt='arrow'></img>
+        </Link>
       </div>
       
       <div className='checkoutContent'>
