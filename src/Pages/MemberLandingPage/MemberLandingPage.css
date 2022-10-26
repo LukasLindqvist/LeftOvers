@@ -1,0 +1,67 @@
+.memberLandingPageContent{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 370px;
+}
+
+.memberLandingPageContent h1{
+    align-self: center;
+    text-align: center;
+    width: 220px;
+    margin-top: 40px;
+    font-size: 24px;
+    color: #FEB922;
+}
+
+.sellFood{
+    display: flex;
+    flex-direction: column;
+    height: 247px;
+    background-size: 100% 100%;
+    margin-top: 60px;
+    margin-bottom: 110px;
+    text-align: center;
+
+    
+}
+
+.sellFood h2{
+    width: 220px;
+    align-self: center;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+}
+
+.buyFood{
+    display: flex;
+    flex-direction: column;
+    height: 247px;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.buyFood h2{
+    width: 235px;
+    align-self: center;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.memberLandingPageContent a{
+    color:#FEB922;
+    align-self: center;
+    width: 70px;
+    text-decoration: none;
+    outline: 1px solid #FEB922;
+    outline-offset: 2px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.memberLandingPageContent a:active{
+    transform: translateY(2px);
+}

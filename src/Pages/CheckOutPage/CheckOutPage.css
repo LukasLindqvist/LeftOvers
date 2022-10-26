@@ -1,0 +1,118 @@
+.checkoutContent{
+    color:#FEB922;;
+    margin-top: 50px;
+}
+
+.checkoutContent h1{
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* cart */
+.checkoutContent .cartItems{
+    margin-top: 30px;
+    height: auto;
+    width: 357px;
+    outline: 1px solid #FEB922;
+    
+}
+
+ .checkoutContent .cartItems ul{
+    margin-left: 15px;
+    padding-top: 15px;
+    list-style-type: none;
+    
+}
+
+.checkoutContent .cartItems ul li{
+    display: flex;
+    margin-top: 25px;
+    line-height: 1.5;
+    
+}
+
+.checkoutContent .cartItems ul li p{
+    margin-left: 20px;
+}
+
+.checkoutContent .cartItems ul li .foodImg{
+    margin-right: 10px;
+    height: 26px;
+    width: 26px;
+}
+
+.checkoutContent .cartItems ul li .deleteIcon{
+    padding-left: 10px;
+}
+
+.checkoutContent .cartItems h2{
+    margin-top: 50px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: lighter;
+    padding-bottom: 60px;
+}
+
+/* Payment Alternatives */
+
+.payment{
+    display: flex;
+    flex-direction: column;
+}
+
+.payment h1{
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.payment .paymentOptions{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.payment .paymentOptions ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.payment .paymentOptions ul li{
+    display: flex;
+    width: 150px;
+    outline: 1px solid #FEB922;
+    margin-bottom: 20px;
+}
+
+.payment .paymentOptions ul li label {
+    line-height: 1.5;
+    margin-left: 15px;
+}
+
+#klarna{
+    margin-left: 45px;
+}
+
+#swish{
+    margin-left: 48px;
+}
+
+#debitCard{
+    margin-left: 12px;
+}
+
+.payment a{
+    align-self: center;
+    text-align: center;
+    color: #FEB922;
+    width: 70px;
+    text-decoration: none;
+    outline: 1px solid #FEB922;
+    outline-offset: 1px;
+    border-radius: 5px;
+    margin-top: 40px;
+    font-size: 14px;
+}

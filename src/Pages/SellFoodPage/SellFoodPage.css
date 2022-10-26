@@ -1,0 +1,128 @@
+.sellFoodContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    color: #FEB922;
+}
+
+.sellFoodContent h1{
+    font-size: 26px;
+    font-weight: lighter;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+
+}
+
+.sellFoodContent .sellFoodForm{
+    height: 662px;
+    width: 373px;
+    outline: 2px solid #FEB922;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+/* txt fields */
+.sellFoodContent .sellFoodForm .txtFields{
+    margin-top: 40px;
+}
+
+.sellFoodContent .sellFoodForm .txtFields label{
+    margin-left: 50px;
+    
+}
+
+.sellFoodContent .sellFoodForm .txtFields input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #FEB922;
+    color: white;
+    width: 255px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.sellFoodContent .sellFoodForm .txtFields input:focus{
+    color: white;
+    outline: none;
+}
+
+
+.sellFoodContent .sellFoodForm .txtFields img{
+   cursor: pointer;
+}
+
+/* dropdown menu */
+.sellFoodContent .sellFoodForm select{
+    background: transparent;
+    border: none;
+    color: #FEB922;
+    outline: 1px solid #FEB922;
+    width: 255px;
+    margin-left: 50px;
+    font-size: 14px;
+    height: 30px;
+}
+
+.sellFoodContent .sellFoodForm  select option{
+    background-color:#645b7c
+}
+
+.sellFoodContent .sellFoodForm .checkboxes label{
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.sellFoodContent .sellFoodForm .checkboxes{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.sellFoodContent .sellFoodForm .checkboxes input{
+    margin-right: 30px;
+}
+
+/* add photo */
+.sellFoodContent .sellFoodForm .addPhoto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.sellFoodContent .sellFoodForm .addPhoto img{
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 3px;
+}
+
+.sellFoodContent .sellFoodForm .photoPreview{
+    align-self: center;
+    height: 180px;
+    width: 320px;
+    outline: 1px solid #FEB922;
+    margin-top: 7px;
+    
+}
+
+/* button */
+.sellFoodContent .sellFoodForm a{
+    align-self: center;
+    text-align: center;
+    color: #FEB922;
+    width: 70px;
+    text-decoration: none;
+    outline: 1px solid #FEB922;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+
+

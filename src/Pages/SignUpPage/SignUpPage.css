@@ -1,0 +1,22 @@
+.welcomeTxt{
+    text-align: center;
+    color: white;
+    width: 250px;
+    margin-top: 60px;
+}
+
+.welcomeTxt h2{
+    color: #FEB922;
+    
+}
+
+.welcomeTxt h3{
+    margin-top: 30px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.welcomeTxt h3::after{
+    content: "Food Waste";
+    color: #FEB922;
+}

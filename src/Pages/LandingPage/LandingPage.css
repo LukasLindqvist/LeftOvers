@@ -1,0 +1,153 @@
+
+
+.landingPageContent{
+    filter: blur(4px);
+    margin-top: 30px;
+    text-align: center;
+    color: #FEB922;
+}
+
+#firstSentence{
+    color: white;
+    
+}
+
+/* add orange text to sentence */
+#firstSentence::after{
+    color: #FEB922;
+    content: "Food Hero";
+}
+
+.landingPageContent h2{
+    font-weight: 500;
+}
+
+#secondSentence{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+#thirdSentence::after{
+    content: "Food Waste";
+    font-weight: 700;
+}
+
+#fourthSentence::after{
+    content: "Sustainability";
+    font-weight: 700;
+}
+
+.landingPageContent img{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.landingPageContent h3{
+    font-weight: 400;
+}
+
+.landingPageContent h4{
+    color: white;
+    font-weight: 500;
+}
+
+.landingPageContent a{
+    text-decoration: underline;
+    color: #FEB922;
+}
+
+/* Log in modal css */
+
+.logInModalContent{
+    position: absolute;
+    color: #FEB922;
+    background: linear-gradient(180deg, #352A53 0%, #3D3552 100%);
+    height: 410px;
+    width: 260px;
+    z-index: 20;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+}
+
+.logInModalContent h1{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 26px;
+}
+
+.signInForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.signInForm label{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.inputFields{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    margin-top: 20px;
+    margin-left: 22px;
+}
+
+.inputFields input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #FEB922;
+    color: white;
+    cursor: pointer;
+}
+
+.inputFields input:focus{
+    color: white;
+    outline: none;
+}
+
+.inputFields #emailField{
+    margin-bottom: 30px;
+}
+
+.signInForm button{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    color: #FEB922;
+    outline: 2px solid #FEB922;
+    outline-offset: 4px;
+    font-size: 1rem;
+    width: 30%;
+    margin-top: 160px;
+    cursor: pointer;
+}
+
+.signInForm a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.signInForm button:active{
+    transform: translateY(2px);
+}
+
+
+.signInForm p{
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.signInForm p::after{
+    content: "Click Here";
+    color: #FEB922;
+    text-decoration: underline;
+}
