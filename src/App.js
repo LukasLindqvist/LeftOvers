@@ -5,7 +5,7 @@ import LandingPage from './Pages/LandingPage/LandingPage';
 import SignUp from './Pages/SignUpPage/SignUpPage';
 import MemberLandingPage from './Pages/MemberLandingPage/MemberLandingPage';
 import SellFood from './Pages/SellFoodPage/SellFoodPage';
-import Shop from './Pages/ShopPage';
+import Shop from './Pages/ShopPage/ShopPage';
 import CheckOut from './Pages/CheckOutPage/CheckOutPage';
 import './app.css'
 

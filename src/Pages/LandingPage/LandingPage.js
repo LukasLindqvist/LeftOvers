@@ -18,7 +18,7 @@ function LandingPage() {
           <h2 id='fourthSentence'>Increased </h2>
           <img src={HomeMade} alt='Home made logo'></img>
           <h3 id='signUp'><Link to="/SignUp">Sign Up</Link> today</h3>
-          <h4>Already registred? <a href=''>Log in</a></h4>
+          <h4>Already registred? <a href='filler'>Log in</a></h4>
         </div>
     </div>
     

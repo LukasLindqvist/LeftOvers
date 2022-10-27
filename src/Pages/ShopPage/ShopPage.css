@@ -1,0 +1,118 @@
+
+.shopContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shopContent .notificationIcons #notificationBell{
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 9px;
+}
+.shopContent .notificationIcons #shoppingCart{
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 135px;
+}
+
+.shopContent h2{
+    color: #FEB922;
+    text-decoration: underline;
+    margin-top: 60px;
+}
+
+
+/* Filter area */
+.shopContent .filterArea{
+    width: 320px;
+}
+
+.shopContent .filterArea .searchBar input{
+    width: 320px;
+    border: none;
+    height: 25px;
+    margin-top: 40px;
+}
+
+.shopContent .filterArea .checkboxSort{
+    float: right;
+    color: #FEB922;
+    font-size: 14px;
+}
+
+.shopContent .filterArea .checkboxSort label input{
+    margin-left: 4px;
+}
+
+.shopContent .filterArea .checkboxSort #vegitarianSort{
+    margin-right: 10px;
+}
+
+
+/* Shop content */
+.shopContent .foodCardsContainer{
+    width: 365px;
+    margin-top: 50px;    
+}
+
+.shopContent .foodCardsContainer .foodCards{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.shopContent .foodCardsContainer .foodCards .foodCard{
+    display: flex;
+    flex-direction: column;
+    width: 175px ;
+    height: auto;
+    outline: 1px solid #FEB922;
+    border-radius: 5px;
+    color: #FEB922;
+    
+}
+
+.shopContent .foodCardsContainer .foodCards .foodCard img{
+    width: 147px;
+    height: 85px;
+    margin-top: 10px;
+    align-self: center;
+}
+
+.shopContent .foodCardsContainer .foodCards .foodCard h1{
+    text-align: center;
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.shopContent .foodCardsContainer .foodCards .foodCard h2{
+    color: white;
+    font-size: 12px;
+    font-weight: lighter;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.shopContent .foodCardsContainer .foodCards .foodCard p{
+    width: 170px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.shopContent .foodCardsContainer .foodCards .foodCard button{
+    align-self: center;
+    width: 70px;
+    border: none;
+    background-color: transparent;
+    color: #FEB922;
+    outline: 1px solid #FEB922;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+}
