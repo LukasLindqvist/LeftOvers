@@ -1,3 +1,19 @@
+/* shop icon*/
+.shopPath #shopIcon{
+    position: absolute;
+    color: #FEB922;
+    margin-top: 20px;
+    margin-left: 160px;
+    
+}
+
+.shopPath #shopDirection{
+    position: absolute;
+    color: white;
+    margin-left: 30px;
+    margin-top: 0px;
+}
+
 .sellFoodContent{
     display: flex;
     flex-direction: column;
@@ -71,6 +87,8 @@
     background-color:#645b7c
 }
 
+
+/* checkboxes */
 .sellFoodContent .sellFoodForm .checkboxes label{
     margin-right: 5px;
     font-size: 14px;
@@ -94,13 +112,22 @@
     margin-top: 30px;
     margin-right: 10px;
     font-size: 14px;
-    cursor: pointer;
+    
 }
 
 .sellFoodContent .sellFoodForm .addPhoto img{
     position: absolute;
-    margin-left: 90px;
+    margin-left: 10px;
     margin-top: 3px;
+    cursor: pointer;
+}
+
+.sellFoodContent .sellFoodForm label{
+    cursor: pointer;
+}
+
+.sellFoodContent .sellFoodForm label input{
+    display: none;
 }
 
 .sellFoodContent .sellFoodForm .photoPreview{
@@ -109,19 +136,32 @@
     width: 320px;
     outline: 1px solid #FEB922;
     margin-top: 7px;
-    
+    margin-bottom: 10px;
+}
+
+.sellFoodContent .sellFoodForm .photoPreview img{
+    width: 100%;
+    height: 100%;
 }
 
 /* button */
-.sellFoodContent .sellFoodForm a{
+.sellFoodContent .sellFoodForm button{
     align-self: center;
     text-align: center;
+    background-color: transparent;
+    border: none;
     color: #FEB922;
     width: 70px;
     text-decoration: none;
     outline: 1px solid #FEB922;
     border-radius: 5px;
-    margin-top: 40px;
+    margin-top: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.sellFoodContent .sellFoodForm span{
+    text-align: center;
 }
 
 

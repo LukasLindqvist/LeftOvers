@@ -32,8 +32,14 @@
     
 }
 
-.checkoutContent .cartItems ul li p{
-    margin-left: 20px;
+.checkoutContent .cartItems ul li #foodPrice{
+    position: absolute;
+    margin-left: 210px;
+}
+
+.checkoutContent .cartItems ul li #foodTitle{
+    width: 150px;
+    word-wrap: break-word;
 }
 
 .checkoutContent .cartItems ul li .foodImg{
@@ -42,8 +48,12 @@
     width: 26px;
 }
 
-.checkoutContent .cartItems ul li .deleteIcon{
-    padding-left: 10px;
+.checkoutContent .cartItems ul li #deleteIcon{
+    display: inline-block;
+    position: absolute;
+    margin-left: 255px;
+    padding-top: 2px;
+    cursor: pointer;
 }
 
 .checkoutContent .cartItems h2{

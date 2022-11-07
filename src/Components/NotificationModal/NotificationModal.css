@@ -1,0 +1,42 @@
+.notificationCard{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 250px;
+    color: #FEB922;
+    background: #8074A2;
+    margin-top: 60px;
+    border-radius: 5px;
+    margin-left: 186px;
+    min-height: 70px;
+}
+
+.pointer{
+    position: absolute;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #8074A2;
+}
+
+.notificationCard .notificationContent{
+    text-align: center;
+    font-size: 14px;
+}
+
+.notificationCard .notificationContent .notification{
+    display: flex;
+    width: 230px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    outline: 1px solid #FEB922;
+}
+
+.notificationCard .notificationContent .notification img{
+    cursor: pointer;
+}
+
+
+

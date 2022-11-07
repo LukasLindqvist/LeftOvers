@@ -1,18 +1,81 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './CheckOutPage.css'
 import { Link } from 'react-router-dom';
+import { cartArray, notificationArray } from '../ShopPage/ShopPage';
+
 
 import returnArrow from '../../Images/Return_Arrow.svg'
 import deleteIcon from '../../Images/Delete_Icon.svg'
-import foodImg from '../../Images/food_prep_filler.jpg'
 import klarnaLogo from '../../Images/Klarna.png'
 import swishLogo from '../../Images/Swish.png'
 import debitCardLogo from '../../Images/American_Express.png'
+import axios from 'axios';
+
 
 function CheckOut() {
 
-  // Ta bort varor ur varukorg
-  //Tillbaka till shopview vid checkout
+  const [cart,setCart] = useState([])
+  const[updatePage, setUpdatePage] = useState()
+  useEffect(() => {
+    setCart(cartArray)
+    setUpdatePage(cartArray)
+  },[updatePage])
+
+
+  function removeFromCart(arrayPosition){
+
+    
+
+    //re add the foodbox to the backend again
+    axios.post('http://localhost:3001/foodBoxes',{
+      title: cart[arrayPosition].title,
+      allergenes: cart[arrayPosition].allergenes,
+      ingredients: cart[arrayPosition].ingredients,
+      location: cart[arrayPosition].location,
+      foodType: cart[arrayPosition].foodType,
+      photo: cart[arrayPosition].photo
+    })
+    .then(res => {
+      console.log(res.status);
+      //remove element from cart and update page
+      cart.splice(arrayPosition,1)
+      setUpdatePage(res.status)
+    })
+    .catch(err => {
+      console.log(err)
+    })  
+  }
+
+
+  const [cartItems, setCartItems] = useState('')
+
+  useEffect(() => {
+    setCartItems(
+      cart.map((data) => {
+        return (
+          <React.Fragment key={data._id}>
+          <li>
+            <img src={data.photo} alt='foodImg' className='foodImg'></img>
+            <p id='foodTitle'>{data.title}</p> <p id='foodPrice'>60kr</p>
+            <img src={deleteIcon} alt='deleteIcon' id='deleteIcon' onClick={() => removeFromCart(cart.indexOf(data))}></img>
+          </li>
+        </React.Fragment>
+        )
+      })
+      )
+    },[updatePage])
+  
+
+    function buyFood(){
+      //empty the whole cart of items
+      cart.length = 0
+
+      let random = (Math.random() + 1).toString(36).substring(4)
+      notificationArray.push('You have one order ready for pickup, Code: ' + random + ' Locker:#gmp286')
+      
+      //todo send response message to array for alert modal
+    }
+
   return (
     <div className='container'>
       <div className='returnArrow'>
@@ -25,29 +88,9 @@ function CheckOut() {
         <h1>Checkout</h1>
         <div className='cartItems'>
           <ul>
-            <li> 
-              <img src={foodImg} alt='foodImg' className='foodImg'/>
-              Sesame Breaded cod <p>60kr</p> 
-              <img src={deleteIcon} alt='delete Icon' className='deleteIcon'/>
-            </li>
-
-            <li>
-              <img src={foodImg} alt='foodImg' className='foodImg'/>
-              Sesame Breaded cod <p>60kr</p> 
-              <img src={deleteIcon} alt='delete Icon' className='deleteIcon'/>
-            </li>
-
-            <li><img src={foodImg} alt='foodImg' className='foodImg'/>
-              Sesame Breaded cod <p>60kr</p>
-              <img src={deleteIcon} alt='delete Icon' className='deleteIcon'/>
-            </li>
-
-            <li><img src={foodImg} alt='foodImg' className='foodImg'/>
-              Sesame Breaded cod <p>60kr</p> 
-              <img src={deleteIcon} alt='delete Icon' className='deleteIcon'/>
-            </li>
+            {cartItems}
           </ul>
-          <h2>Total: 240kr</h2>
+          <h2>Total: {cartArray.length * 60} kr</h2>
         </div>
 
       <div className='payment'>
@@ -77,7 +120,7 @@ function CheckOut() {
             </li>
           </ul>
           </div>
-            <Link to='/shop'>Checkout</Link>
+            <Link to='/shop' onClick={() => buyFood()}>Checkout</Link>
         </div>
       </div>
     </div>

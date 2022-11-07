@@ -5,17 +5,46 @@
     align-items: center;
 }
 
-.shopContent .notificationIcons #notificationBell{
-    position: absolute;
-    margin-left: 70px;
-    margin-top: 9px;
-}
 .shopContent .notificationIcons #shoppingCart{
     position: absolute;
     margin-top: 16px;
     margin-left: 135px;
 }
 
+.shopContent .notificationIcons a{
+    text-decoration: none;
+}
+
+.shopContent .notificationIcons #cartCount{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    background-color: red;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+.shopContent .notificationIcons #notificationBell{
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 9px;
+    cursor: pointer;
+}
+
+.shopContent .notificationIcons #notificationCount{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    background-color: red;
+    margin-left: 93px;
+    margin-top: 30px;
+    cursor: pointer;
+}
 .shopContent h2{
     color: #FEB922;
     text-decoration: underline;
@@ -59,28 +88,31 @@
 .shopContent .foodCardsContainer .foodCards{
     display: grid;
     grid-template-columns: auto auto;
-    gap: 10px;
+    gap: 10px; 
+    width: 20px;  
 }
 
-.shopContent .foodCardsContainer .foodCards .foodCard{
+.shopContent .foodCardsContainer .foodCards .foodCardWrapper{
+    width: 175px;
+}
+
+
+.shopContent .foodCardsContainer .foodCards .foodCardWrapper .foodCardContent{
     display: flex;
     flex-direction: column;
-    width: 175px ;
-    height: auto;
-    outline: 1px solid #FEB922;
     border-radius: 5px;
     color: #FEB922;
-    
+    outline: 1px solid #FEB922;
 }
 
-.shopContent .foodCardsContainer .foodCards .foodCard img{
+.shopContent .foodCardsContainer .foodCards .foodCardWrapper .foodCardContent  img{
     width: 147px;
     height: 85px;
     margin-top: 10px;
     align-self: center;
 }
 
-.shopContent .foodCardsContainer .foodCards .foodCard h1{
+.shopContent .foodCardsContainer .foodCards .foodCardWrapper .foodCardContent h1{
     text-align: center;
     font-size: 14px;
     text-decoration: underline;
@@ -88,7 +120,7 @@
     margin-top: 10px;
 }
 
-.shopContent .foodCardsContainer .foodCards .foodCard h2{
+.shopContent .foodCardsContainer .foodCards .foodCardWrapper .foodCardContent h2{
     color: white;
     font-size: 12px;
     font-weight: lighter;
@@ -96,14 +128,15 @@
     margin-top: 10px;
 }
 
-.shopContent .foodCardsContainer .foodCards .foodCard p{
+.shopContent .foodCardsContainer .foodCards .foodCardWrapper .foodCardContent p{
     width: 170px;
     font-size: 12px;
     font-weight: bold;
     margin-left: 5px;
+    word-wrap: break-word;
 }
 
-.shopContent .foodCardsContainer .foodCards .foodCard button{
+.shopContent .foodCardsContainer .foodCards .foodCardWrapper .foodCardContent button{
     align-self: center;
     width: 70px;
     border: none;
