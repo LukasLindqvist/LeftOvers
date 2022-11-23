@@ -18,9 +18,8 @@ function LogInModal({open, onClose}) {
                       <label htmlFor="passwordField">Password</label>
                       <input type="password" id='passwordField'></input>
                   </div>
-                  {/* Need confirmation that login = true before going to member landing page */}
                   <Link to="/Member">
-                    <button>Sign In</button>
+                    Sign in
                   </Link>
                   <p>Forgot password? </p>
               </div>

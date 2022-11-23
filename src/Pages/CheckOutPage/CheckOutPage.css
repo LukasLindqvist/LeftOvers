@@ -14,8 +14,7 @@
     margin-top: 30px;
     height: auto;
     width: 357px;
-    outline: 1px solid #FEB922;
-    
+    outline: 1px solid #FEB922;   
 }
 
  .checkoutContent .cartItems ul{
@@ -29,7 +28,6 @@
     display: flex;
     margin-top: 25px;
     line-height: 1.5;
-    
 }
 
 .checkoutContent .cartItems ul li #foodPrice{
@@ -125,4 +123,11 @@
     border-radius: 5px;
     margin-top: 40px;
     font-size: 14px;
+}
+
+
+@media (max-width: 380px) {
+    .checkoutContent .cartItems{
+        width: 350px;
+    }
 }

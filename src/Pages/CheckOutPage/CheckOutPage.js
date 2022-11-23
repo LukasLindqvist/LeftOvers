@@ -67,13 +67,16 @@ function CheckOut() {
   
 
     function buyFood(){
-      //empty the whole cart of items
-      cart.length = 0
-
-      let random = (Math.random() + 1).toString(36).substring(4)
-      notificationArray.push('You have one order ready for pickup, Code: ' + random + ' Locker:#gmp286')
-      
-      //todo send response message to array for alert modal
+      if (cart.length > 0) {
+        //empty the whole cart of items
+        cart.length = 0
+        
+        let random = (Math.random() + 1).toString(36).substring(4)
+        notificationArray.push('You have one order ready for pickup, Code: ' + random + ' Locker:#gmp286') 
+      }else{
+        alert("cart empty")
+      }
+     
     }
 
   return (

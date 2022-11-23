@@ -149,3 +149,34 @@
     cursor: pointer;
     
 }
+
+
+@media (max-width: 380px) {
+    .shopContent .foodCardsContainer .foodCards{
+        gap: 5px; 
+    }
+
+    .shopContent .foodCardsContainer{
+        width: 355px;
+        margin-top: 50px;    
+    }
+}
+
+@media (min-width:810px){
+
+    .shopContent .foodCardsContainer .foodCards{
+        grid-template-columns: auto auto auto;
+    }
+
+    .shopContent .foodCardsContainer{
+        width: 700px;  
+    }
+
+    .shopContent .foodCardsContainer .foodCards .foodCardWrapper{
+        width: 230px;
+    }
+
+    .shopContent .foodCardsContainer .foodCards .foodCardWrapper .foodCardContent  img{
+        width: 200px;
+    }
+}

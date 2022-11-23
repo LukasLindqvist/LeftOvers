@@ -14,8 +14,6 @@
     width: 185px ;
     background-size: cover;
     background-position: center;
-    
-
 }
 
 .signUpForm .right{
@@ -59,4 +57,17 @@
 }
 
 
+@media (max-width: 380px)  {
 
+    .signUpForm{
+        width: 350px;
+    }
+
+    .signUpForm .left {
+        width: 180px;
+    }
+
+    .signUpForm .right{
+        width: 180px;
+    }
+}

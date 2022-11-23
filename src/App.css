@@ -24,3 +24,9 @@ body{
     margin-right: 350px;
     cursor: pointer;
 }
+
+@media (max-width: 380px) {
+    .returnArrow{
+        margin-right: 310px;
+    }
+}

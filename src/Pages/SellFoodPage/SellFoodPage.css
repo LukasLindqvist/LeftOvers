@@ -165,4 +165,20 @@
 }
 
 
+@media (max-width: 380px) {
+    .shopPath #shopIcon{
+        margin-left: 140px;
+    }
+    
+    .shopPath #shopDirection{
+        margin-left: 10px;
+    }
 
+    .sellFoodContent .sellFoodForm{
+        width: 345px;
+    }
+
+    .sellFoodContent .sellFoodForm .checkboxes input{
+        margin-right: 20px;
+    }
+}

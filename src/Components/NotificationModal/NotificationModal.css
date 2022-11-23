@@ -39,4 +39,12 @@
 }
 
 
+@media (max-width: 435px) {
+    .notificationCard{
+        margin-left: 100px;
+    }
 
+    .pointer{
+        right: 72px;
+    }
+}

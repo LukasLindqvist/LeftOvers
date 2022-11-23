@@ -54,7 +54,7 @@
     margin-bottom: 30px;
 }
 
-.signInForm button{
+.signInForm a{
     display: flex;
     align-self: center;
     justify-content: center;

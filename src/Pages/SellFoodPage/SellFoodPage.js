@@ -22,7 +22,7 @@ function SellFood() {
     let locationValue = document.getElementById('locations').value
     let foodTypeValue = document.querySelector('input[name="foodType"]:checked').value
     
-    console.log(imgData)
+    
     const form = document.getElementById('sellFoodForm')
     
     e.preventDefault()

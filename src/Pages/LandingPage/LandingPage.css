@@ -53,4 +53,5 @@
 .landingPageContent a{
     text-decoration: underline;
     color: #FEB922;
+    cursor: pointer;
 }

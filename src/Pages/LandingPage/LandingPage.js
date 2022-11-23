@@ -21,7 +21,7 @@ function LandingPage() {
           <h3 id='signUp'><Link to="/SignUp">Sign Up</Link> today</h3>
           <h4>Already registred? <a onClick={() => setOpenModal(true)}>Log in</a></h4>
         </div>
-    </div>
+    </div> 
     
     </>
 

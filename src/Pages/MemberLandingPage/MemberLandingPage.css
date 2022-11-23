@@ -21,9 +21,7 @@
     background-size: 100% 100%;
     margin-top: 60px;
     margin-bottom: 110px;
-    text-align: center;
-
-    
+    text-align: center;  
 }
 
 .sellFood h2{
@@ -64,4 +62,16 @@
 
 .memberLandingPageContent a:active{
     transform: translateY(2px);
+}
+
+@media (max-width: 380px) {
+    .sellFood{
+        align-self: center;
+        width: 350px;
+    }
+
+    .buyFood{
+        align-self: center;
+        width: 350px;
+    }
 }

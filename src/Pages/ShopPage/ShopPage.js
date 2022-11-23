@@ -21,7 +21,7 @@ const [data,setData] = useState([])
     axios.get('http://localhost:3001/foodBoxes')
   .then(res => {
     setData(res.data)
-    console.log(res.data)
+    console.log(res.status)
   })
   .catch(err => {
     console.log(err)
@@ -55,9 +55,8 @@ const [data,setData] = useState([])
       
       axios.delete(`http://localhost:3001/foodBoxes/${elementId}`)
       .then(res => {
-        console.log("added to cart")
-        console.log(cartArray)
         setUpdatePage(res.data)
+        console.log(res.status)
       })
       .catch(err => {
         console.log(err)
@@ -84,7 +83,6 @@ const [data,setData] = useState([])
   
   useEffect(() => {
     setNotificationCount(notificationArray.length)
-    console.log(notificationArray.length)
   },[notificationArray.length])
 
   return (
