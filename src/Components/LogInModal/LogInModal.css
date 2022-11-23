@@ -10,7 +10,6 @@
     left: 0;
     right: 0;
     margin:auto;
-    
 }
 
 .logInModalContent h1{
@@ -99,4 +98,15 @@
     height: 100%;
     position: fixed;
     
+}
+
+
+@media (max-height:390px) {
+    .logInModalContent{
+        height: 360px;
+    }
+
+    .signInForm a{
+        margin-top: 80px;
+    }
 }

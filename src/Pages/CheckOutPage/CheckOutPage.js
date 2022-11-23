@@ -24,8 +24,6 @@ function CheckOut() {
 
   function removeFromCart(arrayPosition){
 
-    
-
     //re add the foodbox to the backend again
     axios.post('http://localhost:3001/foodBoxes',{
       title: cart[arrayPosition].title,
@@ -55,7 +53,7 @@ function CheckOut() {
         return (
           <React.Fragment key={data._id}>
           <li>
-            <img src={data.photo} alt='foodImg' className='foodImg'></img>
+            <img src={data.photo} alt='img' className='foodImg'></img>
             <p id='foodTitle'>{data.title}</p> <p id='foodPrice'>60kr</p>
             <img src={deleteIcon} alt='deleteIcon' id='deleteIcon' onClick={() => removeFromCart(cart.indexOf(data))}></img>
           </li>

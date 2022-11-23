@@ -118,9 +118,10 @@ function SellFood() {
           </div>
 
           <select id='locations'>
-            <option>Location</option>
-            <option>2</option>
-            <option>3</option>
+            <option selected disabled hidden>Location</option>
+            <option>Coop</option>
+            <option>ICA</option>
+            <option>Willys</option>
           </select>
 
           <div className='checkboxes'>
